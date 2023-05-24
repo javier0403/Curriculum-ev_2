@@ -6,6 +6,22 @@
     background-color: #43dede;
 }
 
+#fondo1 {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    border: 1px solid #000000;
+    background-color: #20dbd9;
+    grid-template-areas:
+    "a a a a"
+    "e e b b"
+    "e e c c"
+    "e e d d";
+}
+
 .cabecera {
     display: inline-block;
     padding: 0 20px;
@@ -13,51 +29,6 @@
     grid-row: 1/2;
     border: 1px solid #000000;
     background-color: #20dbd9;
-
-}
-
-.imagen1{
-
-    display: grid;
-    display: inline-block;
-    padding: 0 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    background-image: url("imagenes/rsz_11imagen1.jpg");
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-
-
-}
-
-.imagen2{
-
-    display: grid;
-    display: inline-block;
-    padding: 0 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    background-image: url("imagenes/rsz_whatsapp_image_2023-04-21_at_201446.jpg");
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-
-}
-
-.imagen3{
-
-    display: grid;
-    display: inline-block;
-    padding: 0 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column: (4/5) ;
-    grid-row: (1/2);
-    background-image: url("imagenes/rsz_whatsapp_image_2023-04-21_at_201819.jpg");
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
 
 }
 
@@ -107,3 +78,13 @@
 
 }
 
+  
+  .a { grid-area: a;background-color: rgb(27, 27, 33);}
+  
+  .b { grid-area: b;background-color: #20a4d8;border: 1px solid #000000; }
+  
+  .c { grid-area: c;background-color: #20a4d8;border: 1px solid #000000;  }
+  
+  .d { grid-area: d;background-color: #20a4d8;border: 1px solid #000000;  }
+
+  .e { grid-area: e;background-color: #20a4d8;border: 1px solid #000000;  }
